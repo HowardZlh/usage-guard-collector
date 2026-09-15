@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { escapeHtml, fmtNum, renderPage } from "../src/page";
+import { escapeHtml, FAVICON_SVG, faviconHref, fmtNum, renderPage } from "../src/page";
 
 describe("escapeHtml / fmtNum", () => {
   it("escapes the four HTML specials", () => {
@@ -23,6 +23,23 @@ describe("renderPage", () => {
     expect(html).toContain("<th>09-13</th><th>09-14</th>");
     expect(html).not.toContain("<script");
     expect(html).not.toMatch(/<link[^>]+href="http/);
+  });
+
+  it("ships the Usage Guard gauge icon inline (no static assets, no /favicon.ico 404)", () => {
+    const html = renderPage({ dates, table: new Map(), spikes: [], lastCollected: null });
+    expect(html).toContain(`<link rel="icon" type="image/svg+xml" href="${faviconHref()}">`);
+    expect(faviconHref().startsWith("data:image/svg+xml,")).toBe(true);
+    expect(decodeURIComponent(faviconHref().slice("data:image/svg+xml,".length))).toBe(FAVICON_SVG);
+    // Same geometry and colours as my-open-project apps/b-inbox/public/favicon.svg
+    for (const s of [
+      'stroke="#4f8cff"',
+      'stroke-dasharray="75.40 100.53"',
+      "rotate(135 32 34)",
+      'stroke="#a78bfa"',
+      'fill="#141821"',
+    ]) {
+      expect(FAVICON_SVG).toContain(s);
+    }
   });
 
   it("renders totals, marks spike rows and escapes metric names", () => {

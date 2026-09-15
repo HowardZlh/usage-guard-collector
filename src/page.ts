@@ -26,6 +26,16 @@ export interface PageModel {
   lastCollected: string | null;
 }
 
+/**
+ * Same gauge mark as the hosted Usage Guard (my-open-project apps/b-inbox/public/favicon.svg, 2026-09-15):
+ * blue 270° ring + purple needle on a dark tile. Inlined as a data URI so the Worker ships no static assets.
+ */
+export const FAVICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><title>usage-guard-collector</title><rect width="64" height="64" rx="14" fill="#141821"/><rect x="0.5" y="0.5" width="63" height="63" rx="13.5" fill="none" stroke="#232838"/><circle cx="32" cy="34" r="16" fill="none" stroke="#4f8cff" stroke-width="6" stroke-dasharray="75.40 100.53" transform="rotate(135 32 34)"/><path d="M32 34L41.5 28.4" stroke="#a78bfa" stroke-width="6" stroke-linecap="round"/><circle cx="32" cy="34" r="4.5" fill="#a78bfa"/></svg>`;
+
+export function faviconHref(): string {
+  return `data:image/svg+xml,${encodeURIComponent(FAVICON_SVG)}`;
+}
+
 const CSS = `body{font:14px/1.5 -apple-system,system-ui,sans-serif;max-width:64rem;margin:2rem auto;padding:0 1rem;color:#222}
 table{border-collapse:collapse;width:100%}th,td{padding:.3rem .5rem;border-bottom:1px solid #ddd;text-align:right;white-space:nowrap}
 th:first-child,td:first-child{text-align:left}th{font-weight:600}.spike{background:#fff3e0}.muted{color:#777}code{font-size:.9em}`;
@@ -56,7 +66,7 @@ export function renderPage(m: PageModel): string {
           .join("")}</ul>`;
 
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex"><title>usage-guard-collector</title><style>${CSS}</style></head><body>
+<meta name="robots" content="noindex"><meta name="theme-color" content="#141821"><link rel="icon" type="image/svg+xml" href="${faviconHref()}"><title>usage-guard-collector</title><style>${CSS}</style></head><body>
 <h1>Cloudflare usage, last ${m.dates.length} days</h1>
 <p class="muted">Account-wide daily totals from the GraphQL Analytics API (UTC days; today is partial).
 ${m.lastCollected ? `Last collected ${escapeHtml(m.lastCollected)}.` : "Not collected yet."}
