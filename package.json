@@ -1,0 +1,30 @@
+{
+  "name": "usage-guard-collector",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Read-only Cloudflare usage collector: pulls daily Workers / D1 / DO / KV / R2 / Queues counts from GraphQL Analytics into your own D1 and flags spikes.",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "packageManager": "pnpm@11.5.1",
+  "scripts": {
+    "dev": "wrangler dev --test-scheduled",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run --coverage",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "deploy": "wrangler deploy",
+    "db:migrate:local": "wrangler d1 migrations apply USAGE --local",
+    "db:migrate:remote": "wrangler d1 migrations apply USAGE --remote"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.12",
+    "@cloudflare/workers-types": "^5.20260907.1",
+    "@vitest/coverage-v8": "^3.2.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0",
+    "wrangler": "^4.30.0"
+  }
+}

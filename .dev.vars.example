@@ -1,0 +1,6 @@
+# Copy to .dev.vars for `wrangler dev`. Never commit .dev.vars.
+CF_API_TOKEN=
+CF_ACCOUNT_ID=
+# Optional
+DISCORD_WEBHOOK_URL=
+SLACK_WEBHOOK_URL=
