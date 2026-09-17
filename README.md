@@ -120,6 +120,12 @@ Every `fetch` is stubbed (`vi.stubGlobal`) across success / empty / non-2xx. D1 
 
 Usage Guard is the half of this you might not want to run yourself: multiple accounts, e-mail, a stop switch. It is a waitlist page today, not a product; the form asks one question. [guard.guushu.com](https://guard.guushu.com/?utm_source=github&utm_medium=readme&utm_campaign=usage-guard-collector)
 
+## Questions and support
+
+Questions about a deploy, a dataset that came back empty, or a spike that looks wrong: open a thread in [GitHub Discussions](https://github.com/HowardZlh/usage-guard-collector/discussions). Threads there are indexed, so the next person with the same error can find the answer.
+
+For anything that does not fit a thread, the Guush Studio Discord is here: [discord.gg/kYTzwkmGW](https://discord.gg/kYTzwkmGW). It is small and mostly a changelog right now.
+
 ## License
 
 MIT. See `LICENSE`.
