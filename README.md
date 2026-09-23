@@ -6,6 +6,8 @@ It pulls daily counts from the GraphQL Analytics API into **your own** D1 every 
 
 It never calls a Cloudflare write API. It cannot stop a Worker, delete a database or change a setting. The token you give it is Account Analytics Read and nothing else.
 
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/HowardZlh/usage-guard-collector)
+
 ## Why watch Cloudflare usage instead of waiting for Budget Alerts?
 
 Because Budget Alerts fire on the invoice total, and by then the meter has been running for days. Cloudflare's own docs call [Budget alerts](https://developers.cloudflare.com/billing/manage/budget-alerts/) "informational only. They do not pause or cap usage."
@@ -48,7 +50,13 @@ Override any floor with the `THRESHOLDS_JSON` var in `wrangler.jsonc`:
 
 The first day after deploy flags nothing; there is no baseline yet. "Today" is a partial UTC day, so a spike shows up as soon as the running total crosses the bar, not at midnight.
 
-## Deploy to your own account in seven commands
+## Deploy with the button: one form, two secrets
+
+The button above clones this repo into your GitHub or GitLab account, creates the D1 database, runs the migration and deploys the Worker. The form asks for two secrets: `CF_ACCOUNT_ID` (the 32-hex id in your dashboard URL) and `CF_API_TOKEN` (see "The API token" below). Everything else has a default.
+
+Webhooks are not on that form. Add one afterwards with `wrangler secret put DISCORD_WEBHOOK_URL` or from the Worker's Settings page.
+
+## Deploy to your own account in six commands
 
 You need `wrangler` logged in to the account you want to watch (`npx wrangler login`), Node 22.5 or newer, and pnpm.
 
@@ -56,10 +64,9 @@ You need `wrangler` logged in to the account you want to watch (`npx wrangler lo
 git clone https://github.com/HowardZlh/usage-guard-collector && cd usage-guard-collector
 pnpm install
 pnpm exec wrangler d1 create usage-guard          # paste the database_id it prints into wrangler.jsonc
-pnpm exec wrangler d1 migrations apply USAGE --remote
 pnpm exec wrangler secret put CF_ACCOUNT_ID       # the 32-hex id in your dashboard URL
 pnpm exec wrangler secret put CF_API_TOKEN        # see "The API token" below
-pnpm exec wrangler deploy
+pnpm run deploy                                   # applies the migration, then wrangler deploy
 ```
 
 Optional, after deploy:
