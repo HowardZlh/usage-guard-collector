@@ -175,6 +175,7 @@ describe("runCollect", () => {
 });
 
 describe("renderIndex / fetch handler", () => {
+  afterEach(() => vi.useRealTimers());
   it("empty DB renders the hint and 7 date columns", async () => {
     const html = await renderIndex(env(), NOW);
     expect(html).toContain("No rows yet");
@@ -184,6 +185,8 @@ describe("renderIndex / fetch handler", () => {
   });
 
   it("GET / returns HTML with no-store; other paths and methods 404", async () => {
+    // The fetch handler uses the real clock; pin it so the 7-day window still covers the fixture row.
+    vi.useFakeTimers({ now: NOW, toFake: ["Date"] });
     const e = env();
     await upsertRows(
       e.USAGE,
