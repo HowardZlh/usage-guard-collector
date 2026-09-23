@@ -56,6 +56,8 @@ The button above clones this repo into your GitHub or GitLab account, creates th
 
 Webhooks are not on that form. Add one afterwards with `wrangler secret put DISCORD_WEBHOOK_URL` or from the Worker's Settings page.
 
+If your account already has a D1 named `usage-guard`, the form pre-selects it because the name matches. Pick "create new" unless you mean to share that table; I found this out by binding a test deploy to my live one.
+
 ## Deploy to your own account in six commands
 
 You need `wrangler` logged in to the account you want to watch (`npx wrangler login`), Node 22.5 or newer, and pnpm.
