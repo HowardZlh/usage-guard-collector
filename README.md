@@ -8,6 +8,10 @@ It never calls a Cloudflare write API. It cannot stop a Worker, delete a databas
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/HowardZlh/usage-guard-collector)
 
+![The collector's GET / page: a Spikes list flagging d1.rows_read at 318.2x its 7-day median, above a table of daily totals per metric with that row highlighted](docs/page.png)
+
+That's the whole UI. Sample data, not a real account.
+
 ## Why watch Cloudflare usage instead of waiting for Budget Alerts?
 
 Because Budget Alerts fire on the invoice total, and by then the meter has been running for days. Cloudflare's own docs call [Budget alerts](https://developers.cloudflare.com/billing/manage/budget-alerts/) "informational only. They do not pause or cap usage."
