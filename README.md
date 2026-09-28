@@ -24,7 +24,7 @@ The GraphQL Analytics API already has every number, per day, per resource. What 
 
 ## What it collects: Workers, D1, Durable Objects, KV, R2, Queues
 
-One row per UTC day, product, metric and resource. Dataset and field names were checked against the live schema by introspection on 2026-09-15 (`src/graphql.ts`).
+Each row is one resource's metric for one UTC day. Dataset and field names were checked against the live schema by introspection on 2026-09-15 (`src/graphql.ts`).
 
 | Product | GraphQL dataset | Metrics stored | Resource dimension |
 |---|---|---|---|
@@ -39,10 +39,7 @@ These are analytics counts, not the invoice. Cloudflare's docs say the analytics
 
 ## How a spike is detected: 10x the 7-day median plus a floor
 
-`spike(today, last7)` in `src/spike.ts` is a pure function. A metric is flagged when both hold:
-
-1. today's account-wide total is at least **10x** the median of the previous 7 days, and
-2. today's total is at least an absolute floor for that metric.
+`spike(today, last7)` in `src/spike.ts` is a pure function. A metric is flagged when today's account-wide total is at least **10x** the median of the previous 7 days and also above an absolute floor for that metric.
 
 The floor stops "3 requests vs 0 yesterday" from paging you. Defaults are 1% of the monthly included quota on Workers Paid (2026-09-15 pricing pages): `d1.rows_read` 250,000,000, `do.requests` 10,000, `r2.class_a` 10,000.
 
