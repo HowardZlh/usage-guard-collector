@@ -18,6 +18,8 @@ Because Budget Alerts fire on the invoice total, and by then the meter has been 
 
 I keep a public list of this year's Cloudflare bill spikes: [Why Cloudflare bills spike: 8 D1 and Durable Objects cases from 2026](https://guushu.com/notes/cloudflare-bill-incidents-2026/). Seven are D1 rows read, one is a Durable Objects alarm loop. Amounts run from $176 to about $34,895.
 
+If you'd rather see a number before deploying anything, the [Workers pricing calculator](https://guard.guushu.com/estimate?utm_source=github&utm_medium=readme&utm_campaign=usage-guard-collector) prices a month of usage across D1, Durable Objects, KV, R2 and Queues. No login, and the result URL is shareable.
+
 The shape is the same every time. One meter ran 10,000x above normal, and the first notification was the invoice or a quota email. One thread was 1.476 trillion rows read; another was a $5 subscription that grew to about $4,115 in a month.
 
 The GraphQL Analytics API already has every number, per day, per resource. What was missing was a thing that reads them on a schedule, remembers last week, and says "this one is 500x yesterday" somewhere I will see it. This repo is that thing, and nothing more.
