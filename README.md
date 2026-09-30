@@ -1,6 +1,6 @@
 # usage-guard-collector
 
-Get a Cloudflare usage spike alert before the invoice: a read-only Worker that watches D1 rows read, Durable Objects requests, KV, R2 and Queues, and pings Discord or Slack when today is 10x last week.
+Self-hosted Cloudflare usage spike alerts with a one-click deploy: a read-only Worker that watches D1 rows read, Durable Objects requests, KV, R2 and Queues, and pings Discord or Slack when today is 10x last week.
 
 It pulls daily counts from the GraphQL Analytics API into **your own** D1 every 6 hours. One HTML page. MIT.
 
@@ -51,7 +51,7 @@ Override any floor with the `THRESHOLDS_JSON` var in `wrangler.jsonc`:
 
 The first day after deploy flags nothing; there is no baseline yet. "Today" is a partial UTC day, so a spike shows up as soon as the running total crosses the bar, not at midnight.
 
-## Deploy with the button: one form, two secrets
+## One-click deploy to Cloudflare: one form, two secrets
 
 The button above clones this repo into your GitHub or GitLab account, creates the D1 database, runs the migration and deploys the Worker. The form asks for two secrets: `CF_ACCOUNT_ID` (the 32-hex id in your dashboard URL) and `CF_API_TOKEN` (see "The API token" below). Everything else has a default.
 
