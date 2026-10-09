@@ -132,6 +132,27 @@ Every `fetch` is stubbed (`vi.stubGlobal`) across success / empty / non-2xx. D1 
 
 Usage Guard is the half of this you might not want to run yourself: multiple accounts, e-mail, a stop switch. It is a waitlist page today, not a product; the form asks one question. [guard.guushu.com](https://guard.guushu.com/?utm_source=github&utm_medium=readme&utm_campaign=usage-guard-collector)
 
+## Project activity: commits over the last year
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HowardZlh/usage-guard-collector/output/snake-dark.svg">
+  <img alt="Snake eating the daily commit grid of usage-guard-collector" src="https://raw.githubusercontent.com/HowardZlh/usage-guard-collector/output/snake.svg">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HowardZlh/usage-guard-collector/output/heatmap-dark.svg">
+  <img alt="Heatmap of commits to usage-guard-collector over the last 53 weeks" src="https://raw.githubusercontent.com/HowardZlh/usage-guard-collector/output/heatmap.svg">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HowardZlh/usage-guard-collector/output/skyline-dark.svg">
+  <img alt="Isometric 3D skyline of daily commits to usage-guard-collector" src="https://raw.githubusercontent.com/HowardZlh/usage-guard-collector/output/skyline.svg">
+</picture>
+
+[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=HowardZlh.usage-guard-collector&left_text=visitors)](https://github.com/HowardZlh/usage-guard-collector) Rebuilt every night from this repo's `git log` by [github-action-shares](https://github.com/HowardZlh/github-action-shares).
+
+If usage-guard-collector is useful to you, a ⭐ helps other people find it.
+
 ## Questions and support
 
 Questions about a deploy, a dataset that came back empty, or a spike that looks wrong: open a thread in [GitHub Discussions](https://github.com/HowardZlh/usage-guard-collector/discussions). Threads there are indexed, so the next person with the same error can find the answer.
