@@ -8,6 +8,8 @@ It never calls a Cloudflare write API. It cannot stop a Worker, delete a databas
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/HowardZlh/usage-guard-collector)
 
+[![CI](https://github.com/HowardZlh/usage-guard-collector/actions/workflows/ci.yml/badge.svg)](https://github.com/HowardZlh/usage-guard-collector/actions/workflows/ci.yml) [![Last commit](https://img.shields.io/github/last-commit/HowardZlh/usage-guard-collector)](https://github.com/HowardZlh/usage-guard-collector/commits/main)
+
 ![The collector's GET / page: a Spikes list flagging d1.rows_read at 318.2x its 7-day median, above a table of daily totals per metric with that row highlighted](docs/page.png)
 
 That's the whole UI. Sample data, not a real account.
@@ -132,24 +134,12 @@ Every `fetch` is stubbed (`vi.stubGlobal`) across success / empty / non-2xx. D1 
 
 Usage Guard is the half of this you might not want to run yourself: multiple accounts, e-mail, a stop switch. It is a waitlist page today, not a product; the form asks one question. [guard.guushu.com](https://guard.guushu.com/?utm_source=github&utm_medium=readme&utm_campaign=usage-guard-collector)
 
-## Project activity: commits over the last year
+## Project activity: commits since the first one
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HowardZlh/usage-guard-collector/output/snake-dark.svg">
-  <img alt="Snake eating the daily commit grid of usage-guard-collector" src="https://raw.githubusercontent.com/HowardZlh/usage-guard-collector/output/snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HowardZlh/usage-guard-collector/output/activity-dark.svg">
+  <img alt="Commits to usage-guard-collector since the first one: a snake eating the daily grid, or a one-line summary while there are fewer than 10 active days" src="https://raw.githubusercontent.com/HowardZlh/usage-guard-collector/output/activity.svg">
 </picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HowardZlh/usage-guard-collector/output/heatmap-dark.svg">
-  <img alt="Heatmap of commits to usage-guard-collector over the last 53 weeks" src="https://raw.githubusercontent.com/HowardZlh/usage-guard-collector/output/heatmap.svg">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HowardZlh/usage-guard-collector/output/skyline-dark.svg">
-  <img alt="Isometric 3D skyline of daily commits to usage-guard-collector" src="https://raw.githubusercontent.com/HowardZlh/usage-guard-collector/output/skyline.svg">
-</picture>
-
-[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=HowardZlh.usage-guard-collector&left_text=visitors)](https://github.com/HowardZlh/usage-guard-collector) Rebuilt every night from this repo's `git log` by [github-action-shares](https://github.com/HowardZlh/github-action-shares).
 
 If usage-guard-collector is useful to you, a ⭐ helps other people find it.
 
