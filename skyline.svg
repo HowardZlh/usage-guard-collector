@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="196" height="206" viewBox="0 0 196 206" role="img" aria-labelledby="t d">
+<title id="t">21 commits · 3D</title>
+<desc id="d">Isometric 3D chart of commits per day from 2026-08-23 to 2026-10-17.</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif}.b{transform-box:fill-box;transform-origin:50% 100%;animation:grow .7s cubic-bezier(.2,.9,.3,1.15) both}@keyframes grow{from{transform:scaleY(0);opacity:.2}to{transform:scaleY(1);opacity:1}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<text x="12" y="22" font-size="15" font-weight="600" fill="#1f2328">21 commits · 3D</text>
+<text x="12" y="40" font-size="11" fill="#59636e">2026-08-23 → 2026-10-17</text>
+<polygon points="69.6,83 75.65,86.53 69.6,90.06 63.55,86.53" fill="#ebedf0"/>
+<polygon points="62.4,87.2 68.45,90.73 62.4,94.26 56.35,90.73" fill="#ebedf0"/>
+<polygon points="76.8,87.2 82.85,90.73 76.8,94.26 70.75,90.73" fill="#ebedf0"/>
+<polygon points="55.2,91.4 61.25,94.93 55.2,98.46 49.15,94.93" fill="#ebedf0"/>
+<polygon points="69.6,91.4 75.65,94.93 69.6,98.46 63.55,94.93" fill="#ebedf0"/>
+<polygon points="84,91.4 90.05,94.93 84,98.46 77.95,94.93" fill="#ebedf0"/>
+<polygon points="48,95.6 54.05,99.13 48,102.66 41.95,99.13" fill="#ebedf0"/>
+<polygon points="62.4,95.6 68.45,99.13 62.4,102.66 56.35,99.13" fill="#ebedf0"/>
+<polygon points="76.8,95.6 82.85,99.13 76.8,102.66 70.75,99.13" fill="#ebedf0"/>
+<polygon points="91.2,95.6 97.25,99.13 91.2,102.66 85.15,99.13" fill="#ebedf0"/>
+<polygon points="40.8,99.8 46.85,103.33 40.8,106.86 34.75,103.33" fill="#ebedf0"/>
+<polygon points="55.2,99.8 61.25,103.33 55.2,106.86 49.15,103.33" fill="#ebedf0"/>
+<polygon points="69.6,99.8 75.65,103.33 69.6,106.86 63.55,103.33" fill="#ebedf0"/>
+<polygon points="84,99.8 90.05,103.33 84,106.86 77.95,103.33" fill="#ebedf0"/>
+<polygon points="98.4,99.8 104.45,103.33 98.4,106.86 92.35,103.33" fill="#ebedf0"/>
+<polygon points="33.6,104 39.65,107.53 33.6,111.06 27.55,107.53" fill="#ebedf0"/>
+<polygon points="48,104 54.05,107.53 48,111.06 41.95,107.53" fill="#ebedf0"/>
+<polygon points="62.4,104 68.45,107.53 62.4,111.06 56.35,107.53" fill="#ebedf0"/>
+<g class="b" style="animation-delay:96ms"><title>5 on 2026-09-15</title><polygon points="70.75,61.53 76.8,65.06 76.8,111.06 70.75,107.53" fill="#1a562c"/><polygon points="76.8,65.06 82.85,61.53 82.85,107.53 76.8,111.06" fill="#144222"/><polygon points="76.8,58 82.85,61.53 76.8,65.06 70.75,61.53" fill="#216e39"/></g>
+<polygon points="91.2,104 97.25,107.53 91.2,111.06 85.15,107.53" fill="#ebedf0"/>
+<polygon points="105.6,104 111.65,107.53 105.6,111.06 99.55,107.53" fill="#ebedf0"/>
+<polygon points="26.4,108.2 32.45,111.73 26.4,115.26 20.35,111.73" fill="#ebedf0"/>
+<polygon points="40.8,108.2 46.85,111.73 40.8,115.26 34.75,111.73" fill="#ebedf0"/>
+<polygon points="55.2,108.2 61.25,111.73 55.2,115.26 49.15,111.73" fill="#ebedf0"/>
+<polygon points="69.6,108.2 75.65,111.73 69.6,115.26 63.55,111.73" fill="#ebedf0"/>
+<polygon points="84,108.2 90.05,111.73 84,115.26 77.95,111.73" fill="#ebedf0"/>
+<g class="b" style="animation-delay:160ms"><title>2 on 2026-09-28</title><polygon points="92.35,83.92 98.4,87.45 98.4,115.26 92.35,111.73" fill="#79b683"/><polygon points="98.4,87.45 104.45,83.92 104.45,111.73 98.4,115.26" fill="#5d8c65"/><polygon points="98.4,80.39 104.45,83.92 98.4,87.45 92.35,83.92" fill="#9be9a8"/></g>
+<polygon points="112.8,108.2 118.85,111.73 112.8,115.26 106.75,111.73" fill="#ebedf0"/>
+<polygon points="33.6,112.4 39.65,115.93 33.6,119.46 27.55,115.93" fill="#ebedf0"/>
+<polygon points="48,112.4 54.05,115.93 48,119.46 41.95,115.93" fill="#ebedf0"/>
+<g class="b" style="animation-delay:96ms"><title>2 on 2026-09-17</title><polygon points="56.35,88.12 62.4,91.65 62.4,119.46 56.35,115.93" fill="#79b683"/><polygon points="62.4,91.65 68.45,88.12 68.45,115.93 62.4,119.46" fill="#5d8c65"/><polygon points="62.4,84.59 68.45,88.12 62.4,91.65 56.35,88.12" fill="#9be9a8"/></g>
+<g class="b" style="animation-delay:128ms"><title>3 on 2026-09-23</title><polygon points="70.75,81.28 76.8,84.81 76.8,119.46 70.75,115.93" fill="#1a562c"/><polygon points="76.8,84.81 82.85,81.28 82.85,115.93 76.8,119.46" fill="#144222"/><polygon points="76.8,77.75 82.85,81.28 76.8,84.81 70.75,81.28" fill="#216e39"/></g>
+<g class="b" style="animation-delay:160ms"><title>2 on 2026-09-29</title><polygon points="85.15,88.12 91.2,91.65 91.2,119.46 85.15,115.93" fill="#79b683"/><polygon points="91.2,91.65 97.25,88.12 97.25,115.93 91.2,119.46" fill="#5d8c65"/><polygon points="91.2,84.59 97.25,88.12 91.2,91.65 85.15,88.12" fill="#9be9a8"/></g>
+<polygon points="105.6,112.4 111.65,115.93 105.6,119.46 99.55,115.93" fill="#ebedf0"/>
+<polygon points="120,112.4 126.05,115.93 120,119.46 113.95,115.93" fill="#ebedf0"/>
+<polygon points="40.8,116.6 46.85,120.13 40.8,123.66 34.75,120.13" fill="#ebedf0"/>
+<polygon points="55.2,116.6 61.25,120.13 55.2,123.66 49.15,120.13" fill="#ebedf0"/>
+<polygon points="69.6,116.6 75.65,120.13 69.6,123.66 63.55,120.13" fill="#ebedf0"/>
+<g class="b" style="animation-delay:160ms"><title>2 on 2026-09-30</title><polygon points="77.95,92.32 84,95.85 84,123.66 77.95,120.13" fill="#79b683"/><polygon points="84,95.85 90.05,92.32 90.05,120.13 84,123.66" fill="#5d8c65"/><polygon points="84,88.79 90.05,92.32 84,95.85 77.95,92.32" fill="#9be9a8"/></g>
+<polygon points="98.4,116.6 104.45,120.13 98.4,123.66 92.35,120.13" fill="#ebedf0"/>
+<polygon points="112.8,116.6 118.85,120.13 112.8,123.66 106.75,120.13" fill="#ebedf0"/>
+<polygon points="48,120.8 54.05,124.33 48,127.86 41.95,124.33" fill="#ebedf0"/>
+<polygon points="62.4,120.8 68.45,124.33 62.4,127.86 56.35,124.33" fill="#ebedf0"/>
+<polygon points="76.8,120.8 82.85,124.33 76.8,127.86 70.75,124.33" fill="#ebedf0"/>
+<polygon points="91.2,120.8 97.25,124.33 91.2,127.86 85.15,124.33" fill="#ebedf0"/>
+<polygon points="105.6,120.8 111.65,124.33 105.6,127.86 99.55,124.33" fill="#ebedf0"/>
+<g class="b" style="animation-delay:128ms"><title>1 on 2026-09-26</title><polygon points="49.15,109.16 55.2,112.69 55.2,132.06 49.15,128.53" fill="#79b683"/><polygon points="55.2,112.69 61.25,109.16 61.25,128.53 55.2,132.06" fill="#5d8c65"/><polygon points="55.2,105.63 61.25,109.16 55.2,112.69 49.15,109.16" fill="#9be9a8"/></g>
+<polygon points="69.6,125 75.65,128.53 69.6,132.06 63.55,128.53" fill="#ebedf0"/>
+<polygon points="84,125 90.05,128.53 84,132.06 77.95,128.53" fill="#ebedf0"/>
+<polygon points="98.4,125 104.45,128.53 98.4,132.06 92.35,128.53" fill="#ebedf0"/>
+<polygon points="62.4,129.2 68.45,132.73 62.4,136.26 56.35,132.73" fill="#ebedf0"/>
+<g class="b" style="animation-delay:192ms"><title>2 on 2026-10-09</title><polygon points="70.75,104.92 76.8,108.45 76.8,136.26 70.75,132.73" fill="#79b683"/><polygon points="76.8,108.45 82.85,104.92 82.85,132.73 76.8,136.26" fill="#5d8c65"/><polygon points="76.8,101.39 82.85,104.92 76.8,108.45 70.75,104.92" fill="#9be9a8"/></g>
+<polygon points="91.2,129.2 97.25,132.73 91.2,136.26 85.15,132.73" fill="#ebedf0"/>
+<g class="b" style="animation-delay:192ms"><title>2 on 2026-10-10</title><polygon points="63.55,109.12 69.6,112.65 69.6,140.46 63.55,136.93" fill="#79b683"/><polygon points="69.6,112.65 75.65,109.12 75.65,136.93 69.6,140.46" fill="#5d8c65"/><polygon points="69.6,105.59 75.65,109.12 69.6,112.65 63.55,109.12" fill="#9be9a8"/></g>
+<polygon points="84,133.4 90.05,136.93 84,140.46 77.95,136.93" fill="#ebedf0"/>
+<polygon points="76.8,137.6 82.85,141.13 76.8,144.66 70.75,141.13" fill="#ebedf0"/>
+<text x="12" y="162" font-size="11" fill="#59636e">Busiest day 2026-09-15 (5)</text>
+<text x="12" y="178" font-size="11" fill="#59636e">Longest streak 3 days</text>
+<text x="12" y="194" font-size="11" fill="#59636e">Active on 9 of 56 days</text>
+</svg>
